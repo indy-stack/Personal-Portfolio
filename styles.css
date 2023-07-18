@@ -1,0 +1,183 @@
+:root {
+    --primary-color:#333333;
+    --secondary-color: #FF6D00;
+    --neutral-color: #FFFFFF;
+    --background-color: #E8E3DE; /* #FAF9F8;*/
+    --call-to-action: #2962FF;
+    --decorative-font-family: 'Philosopher', sans-serif;
+    --text-font-family: 'Montserrat', sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+   text-decoration: none; 
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-weight: 400;
+    background-color: var(--background-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    max-width: 960px;
+}
+
+#header{
+    width: 100vw;
+    height: 50px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    color: var(--primary-color);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+    color: var(--text-color);
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    margin-top: -60px;
+}
+
+ h1 {
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 0.2rem;
+    
+}
+
+#welcome-section h1,
+#welcome-section > p  {
+    max-width: 80%;
+    text-align: center;
+    line-height: 1.4;
+    padding-top: 15px;
+}
+
+#projects {
+    width: 100vw;
+    height: fit-content;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+
+hr {
+    margin-top: 5px;
+    border: none;
+    padding-top: 10px; 
+    border-top: 1.5px solid var(--secondary-color);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 60%;
+    }
+
+    .nav-list {
+        margin-right: 0.5rem;
+    }
+
+    .nav-list a {
+        font-size: 1.5rem;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 58%;
+    }
+   
+    .nav-list {
+        margin-right: 1rem;
+    }
+
+    .nav-list a {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    html{
+        font-size: 56%;
+    }
+   
+    .nav-list {
+        margin-right: 1.5rem;
+    }
+
+    .nav-list a {
+        font-size: 2.1rem;
+    }
+
+    #welcome-section > * {
+        max-width: 70%;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    html{
+        font-size: 54%;
+    }
+   
+    .nav-list {
+        margin-right: 2rem;
+    }
+
+    .nav-list a {
+        font-size: 2.3rem;
+    }
+
+    #welcome-section > * {
+        max-width: 60%;
+    }
+    
+}
