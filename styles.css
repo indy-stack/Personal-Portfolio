@@ -1,8 +1,8 @@
 :root {
     --primary-color:#333333;
     --secondary-color: #FF6D00;
-    --neutral-color: #FFFFFF;
-    --background-color: #E8E3DE; /* #FAF9F8;*/
+    --neutral-color: #faf5f5;
+    --background-color: #E8E3DE;
     --call-to-action: #2962FF;
     --decorative-font-family: 'Philosopher', sans-serif;
     --text-font-family: 'Montserrat', sans-serif;
@@ -22,13 +22,10 @@ html {
 
 body {
     font-weight: 400;
-    background-color: var(--background-color);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; /*FIXME - body overflows for some reason*/
 }
 
-.wrapper {
-    max-width: 960px;
-}
 
 #header{
     width: 100vw;
@@ -42,15 +39,16 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 999;
     color: var(--primary-color);
+    background-color: var(--neutral-color);
 }
 
 .nav-list {
     display: flex;
 }
 
-.nav-list a {
+.nav-list li a {
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
@@ -71,14 +69,15 @@ body {
     text-align: center;
     margin: 0;
     position: relative;
-    margin-top: -60px;
+    z-index: 10;
+    margin-top: -50px;
+    overflow-x: hidden;
 }
 
  h1 {
     text-align: center;
     font-family: 'Philosopher', sans-serif;
-    letter-spacing: 0.2rem;
-    
+    letter-spacing: 0.2rem; 
 }
 
 #welcome-section h1,
@@ -93,7 +92,7 @@ body {
     width: 100vw;
     height: fit-content;
     font-size: 1.6rem;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 hr {
@@ -101,10 +100,41 @@ hr {
     border: none;
     padding-top: 10px; 
     border-top: 1.5px solid var(--secondary-color);
-    width: 70%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
+
+#projects h1 {
+    padding-bottom: 15px;
+}
+
+.project-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.project-tile {
+    background-color: var(--neutral-color);
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.project-tile::after {
+    content: "";
+    width: 400px;
+}
+
 
 
 
@@ -142,6 +172,10 @@ hr {
     .nav-list a {
         font-size: 1.8rem;
     }
+
+    #welcome-section > * {
+        max-width: 60%;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px){
@@ -158,7 +192,7 @@ hr {
     }
 
     #welcome-section > * {
-        max-width: 70%;
+        max-width: 50%;
     }
     
 }
