@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 body {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    /*overflow-x: hidden; FIXME - body overflows for some reason*/
+    overflow-x: hidden; /*FIXME - body overflows for some reason*/
 }
 
 
@@ -212,7 +212,6 @@ hr {
 }
 
 .copyright {
-    border: 1px solid red;
     display: block;
 }
 
