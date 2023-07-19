@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indira's Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,900;1,400;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;900&family=Sen:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
         <nav id="navbar">
@@ -19,7 +21,7 @@
                 <li><a href="#header">HOME</a></li>
                 <li><a href="#welcome-section">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#footer">CONTACT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -34,13 +36,41 @@
             <h1>These are some of my projects</h1>
             <hr>
             <div class="project-container">
-                <div class="project-tile"></div>
-                <div class="project-tile"></div>
-                <div class="project-tile"></div>
+                <a href="https://indy-stack.github.io/Survey-Form/" target="_blank" class="project project-tile">
+                    <img src="./img/survey-form.png" alt="Form image">
+                    <p class="project-title">Survey Form</p>
+                </a>
+                <a href="https://indy-stack.github.io/Martin-Luther-King-Jr.-Tribute-Page/" target="_blank" class="project project-tile">
+                    <img src="./img/tribute-page.png" alt="Tribute page image">
+                <p class="project-title">Martin Luther King Jr. Tribute Page</p>
+                </a>
+                <a href="https://indy-stack.github.io/Technical-Documentation-Page/" target="_blank" class="project project-tile">
+                    <img src="./img/Technical-doc-page.png" alt="technical documentation page image">
+                    <p class="project-title">AJAX technical documentation page</p>
+                </a>
+                <a href="https://indy-stack.github.io/Landing-Page/" target="_blank" class="project project-tile">
+                    <img src="./img/landing-page.png" alt="TrashTrackers Landing page image">
+                    <p class="project-title">TrashTrackers Landing page</p>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Let's connect...</h1>
+            <div class="contact-links">
+                <a id="profile-link" class="contact-link-item" target="_blank" href="https://github.com/indy-stack">
+                    <i class="fa-brands fa-github"></i><span> GitHub</span>
+                </a>
+                <a class="contact-link-item" target="_blank" href="https://www.linkedin.com/in/indira-fraga-12aba5223">
+                    <i class="fa-brands fa-linkedin"></i><span> Linkedin</span>
+                </a>
+                <a class="contact-link-item" target="_blank" href="mailto:indi.fraga08@gmail.com">
+                    <i class="fa-regular fa-envelope"></i><span> Send an email </span>
+                </a>
+            </div>
+            <div class="copyright">
+                Copyright &copy; Indira Fraga 2023
             </div>
         </section>
     </main>
-    <footer></footer>
 </body>
-
 </html>
