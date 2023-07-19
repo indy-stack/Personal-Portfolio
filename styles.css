@@ -34,7 +34,6 @@ body {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden; /*FIXME - body overflows for some reason*/
-    min-width: 400px;
 }
 
 
@@ -45,7 +44,7 @@ body {
 
 #navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     position: fixed;
     top: 0;
@@ -231,6 +230,7 @@ hr {
     .nav-list a {
         font-size: 1.5rem;
     }
+    
    
 }
 
@@ -268,6 +268,18 @@ hr {
     #welcome-section > * {
         max-width: 50%;
     }
+
+    #navbar {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        color: var(--primary-color);
+        background-color: var(--neutral-color);
+    }
     
 }
 
@@ -286,6 +298,18 @@ hr {
 
     #welcome-section > * {
         max-width: 60%;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        color: var(--primary-color);
+        background-color: var(--neutral-color);
     }
     
 }
