@@ -1,0 +1,39 @@
+[
+    {
+       "name": "AJAX technical documentation page",
+       "url": "https://github.com/indy-stack/Technical-Documentation-Page",
+       "imageSrc": "./img/Technical-doc-page.png",
+       "description": "Technical documentation page"
+    },
+    {
+       "name": "TrashTrackers Landing page",
+       "url": "https://github.com/indy-stack/Landing-Page",
+       "imageSrc": "./img/landing-page.png",
+       "description": "TrashTrackers Landing page"
+    },
+    {
+       "name": "Newsletter sign up page challenge",
+       "url": "https://github.com/indy-stack/newsletter-sign-up-with-success-message",
+       "imageSrc": "./img/newsletter-sign-up.png",
+       "description": "Newsletter sign up page challenge"
+    },
+    {
+       "name": "Random Quote Generator",
+       "url": "https://github.com/indy-stack/RandomQuoteGenerator",
+       "imageSrc": "./img/random-quote-generator.png",
+       "description": "Random Quote Generator"
+    },
+    {
+       "name": "Responsive product preview card",
+       "url": "https://github.com/indy-stack/product-preview-card-component",
+       "imageSrc": "./img/product-preview-card.png",
+       "description": "Responsive product preview card"
+    },
+    {
+       "name": "Interactive rating component",
+       "url": "https://github.com/indy-stack/interactive-rating-component",
+       "imageSrc": "./img/interactive-rating-component.png",
+       "description": "Interactive rating component"
+    }
+ ]
+ 
